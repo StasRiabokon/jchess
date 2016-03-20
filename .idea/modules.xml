@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://F://JChess/JChess.iml" filepath="F://JChess/JChess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JChess.iml" filepath="$PROJECT_DIR$/JChess.iml" />
     </modules>
   </component>
 </project>
