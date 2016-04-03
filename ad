@@ -1,0 +1,23 @@
+[33mcommit cff2229ecfcefb4fb1960faa9c8202d8f34c8d5b[m
+Author: StasRyabokon97 <ya.stas.rybokon@gmail.com>
+Date:   Fri Mar 25 19:31:41 2016 +0200
+
+    I do not know something to write
+
+[33mcommit b2f616c6b9aac52a01b580cf4761da01c981bb31[m
+Author: StasRyabokon97 <ya.stas.rybokon@gmail.com>
+Date:   Sun Mar 20 18:32:14 2016 +0200
+
+    new classes: Board, Move, Alliance, Knight
+
+[33mcommit a96e0ce292a6a54267ef4de8dca4196910aba0e6[m
+Author: StasRyabokon97 <ya.stas.rybokon@gmail.com>
+Date:   Sat Mar 19 23:42:46 2016 +0200
+
+    immutable
+
+[33mcommit f39e920143b7c012e03bd974f0e620301a045a9b[m
+Author: StasRyabokon97 <ya.stas.rybokon@gmail.com>
+Date:   Sat Mar 19 23:12:49 2016 +0200
+
+    First class Tile. 19.03.20116
