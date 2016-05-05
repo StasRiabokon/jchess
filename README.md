@@ -1,3 +1,3 @@
 Game Chess
 
-by creater Stas:)
+Stas Ryabokon
