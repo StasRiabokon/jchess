@@ -21,7 +21,7 @@ public class Bishop extends Piece {
 
     private final static int[] CANDIDATE_MOVE_VECTOR_COORDINATES = {-9, -7, 7, 9};
 
-    Bishop(int piecePosition, Alliance pieceAlliance) {
+    public Bishop(final int piecePosition, final Alliance pieceAlliance) {
         super(piecePosition, pieceAlliance);
     }
 
@@ -33,10 +33,10 @@ public class Bishop extends Piece {
         for (final int candidateCoordinateOfSet : CANDIDATE_MOVE_VECTOR_COORDINATES) {
             int candidateDestinationCoordinate = this.piecePosition;
             while (BoardUtils.isValidateCoordinate(candidateDestinationCoordinate)) {
-               if(isFirstColumnExlusion(candidateDestinationCoordinate, candidateCoordinateOfSet)||
-                       isEightColumnExlusion(candidateDestinationCoordinate,candidateCoordinateOfSet)){
-                   break;
-               }
+                if (isFirstColumnExlusion(candidateDestinationCoordinate, candidateCoordinateOfSet) ||
+                        isEightColumnExlusion(candidateDestinationCoordinate, candidateCoordinateOfSet)) {
+                    break;
+                }
                 candidateDestinationCoordinate += candidateCoordinateOfSet;
                 if (BoardUtils.isValidateCoordinate(candidateDestinationCoordinate)) {
                     final Tile candidateDestinationTile = board.getTile(candidateDestinationCoordinate);
@@ -56,10 +56,11 @@ public class Bishop extends Piece {
         return ImmutableList.copyOf(legalMoves);
     }
 
-    private static boolean isFirstColumnExlusion(final int currentPosition, final int candidateOfSet ){
-        return BoardUtils.FIRST_COLUMN[currentPosition]&&(candidateOfSet==-9||candidateOfSet==7);
+    private static boolean isFirstColumnExlusion(final int currentPosition, final int candidateOfSet) {
+        return BoardUtils.FIRST_COLUMN[currentPosition] && (candidateOfSet == -9 || candidateOfSet == 7);
     }
-    private static boolean isEightColumnExlusion(final int currentPosition, final int candidateOfSet ){
-        return BoardUtils.EIGHTH_COLUMN[currentPosition]&&(candidateOfSet==-7||candidateOfSet==9);
+
+    private static boolean isEightColumnExlusion(final int currentPosition, final int candidateOfSet) {
+        return BoardUtils.EIGHTH_COLUMN[currentPosition] && (candidateOfSet == -7 || candidateOfSet == 9);
     }
 }
